@@ -6,7 +6,7 @@ function Person(name, age)
 }
 
 person.prototype.greet = function(){
-	return `Hello, my name is ${this.name}, I am ${this.age} years old.`;
+	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`);
 }
 function Employee(name, age, jobTitle) {
 	Person.call(this,name,age);
